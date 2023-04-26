@@ -33,9 +33,10 @@ nav .list>li {
 
 main {
   background-image: linear-gradient(191deg, #996627, transparent);
-  height: 700px;
+  height: 80%;
   font-family: 'Alumni Sans', sans-serif;
   font-size: 18px;
+  margin: 0 auto;
 }
 
 main .introduction {
@@ -63,8 +64,8 @@ main .introduction {
   margin-top: 20px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
-  color: #5e5c0a
+  font-size: 50px;
+  color: #5e5c0a;
 }
 
 .text p {
@@ -72,8 +73,26 @@ main .introduction {
   padding: 10px;
 }
 
+.brief>h2 {
+  text-align: center;
+  color: #5e5c0a;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.video-homenage {
+  margin: 0 auto;
+}
+
+.video-homenage .video {
+  margin-top: 15px;
+  width: 100%;
+}
+
+
 footer {
   border-top: 2px solid #f3e5b4;
+  margin-top: 10px;
   background-image: linear-gradient(to right bottom, #e9ee72, #ffc465, #ff9a7e, #ff7da7, #d677ce);
   display: flex;
   flex-direction: column;
@@ -98,6 +117,163 @@ footer .madeBy,
 .references>a {
   color: #23389b;
 }
+
+/* Family*/
+main {
+  padding: 10px;
+}
+
+main>h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+main>h1,
+main h2 {
+
+  color: #5e5c0a;
+}
+
+main h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+main p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.photo-parents,
+.marriage-photos,
+.image-childrens {
+  height: 300px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.photo-parents img,
+.marriage-photos img,
+.image-childrens img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c194a7;
+}
+
+.photo-parents legend,
+.marriage-photos legend,
+.image-childrens legend {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.marriage-photos p {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+
+.childrens h2 {
+  margin-top: 60px;
+}
+
+/*Movies*/
+
+.image-estrela-fama {
+  height: 300px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.image-estrela-fama img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c194a7;
+}
+
+.image-estrela-fama legend {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.movie-images {
+  position: relative;
+  max-width: 640px;
+  margin: 140px auto 0;
+  padding: 15px;
+}
+
+.carousel {
+  overflow-x: auto;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+}
+
+.arrow-right {
+  left: auto;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.carousel-images {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c194a7;
+}
+
+/*Inventions*/
+.image-patente,
+.image-inventions {
+  height: 300px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.image-patente img,
+.image-inventions img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c194a7;
+}
+
+.image-patente legend,
+.image-inventions legend {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*References*/
+
+
+
+/*Medias*/
+
 
 @media(min-width: 600px) {
   .image img {
