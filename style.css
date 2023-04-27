@@ -113,6 +113,8 @@ footer {
   flex-direction: column;
   color: #23389b;
   font-family: 'Bebas Neue', cursive;
+
+  height: 80px;
 }
 
 .heart {
