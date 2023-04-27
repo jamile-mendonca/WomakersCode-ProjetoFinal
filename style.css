@@ -382,7 +382,7 @@ main .references {
     margin: 0 auto;
   }
 
-  main .references {
+  .references {
     height: 1500px;
   }
 }
