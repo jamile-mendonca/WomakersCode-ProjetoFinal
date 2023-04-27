@@ -41,7 +41,7 @@ nav .list li:hover {
 
 main {
   background-image: linear-gradient(191deg, #996627, transparent);
-  height: 80%;
+  height: 100%;
   font-family: 'Alumni Sans', sans-serif;
   font-size: 18px;
   margin: 0 auto;
@@ -90,10 +90,11 @@ main .introduction {
 
 .brief>p {
   margin: 0 auto 10px;
+  padding: 10px;
 }
 
 .video-homenage {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   height: 300px;
 }
 
@@ -106,7 +107,7 @@ main .introduction {
 
 footer {
   border-top: 2px solid #f3e5b4;
-  margin-top: 10px;
+  padding-top: 10px;
   background-image: linear-gradient(to right bottom, #e9ee72, #ffc465, #ff9a7e, #ff7da7, #d677ce);
   display: flex;
   flex-direction: column;
@@ -197,6 +198,11 @@ main p {
   margin-top: 60px;
 }
 
+.image-childrens legend {
+  padding-bottom: 25px;
+  ;
+}
+
 /*Movies*/
 
 .movie-history>h1 {
@@ -218,12 +224,16 @@ main p {
 .image-estrela-fama legend {
   font-size: 10px;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+.image-estrela-fama>p {
+  padding: 10px;
+  width: 100%;
 }
 
 
 .carousel {
-  margin: 140px auto 0;
+  margin: 20px auto 0;
   overflow: hidden;
   width: 250px;
   position: relative;
@@ -284,7 +294,10 @@ main p {
 .image-inventions legend {
   font-size: 10px;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+.recognition {
+  height: 510px;
 }
 
 /*References*/
@@ -328,32 +341,48 @@ main .references {
 }
 
 @media(min-width: 900px) {
-
-  main .text,
-  .brief>p,
-  .parents,
-  .marriage,
-  .childrens,
-  .movie-history,
-  .image-estrela-fama>p,
-  .inventions,
-  .recognition {
-    margin: 0 auto;
-    width: 600px;
+  main p {
+    font-size: 25px;
   }
 
-  .image-estrela-fama>p {
-    display: flex;
-    left: -157px;
-    position: relative;
+  .text,
+  .brief>p,
+  .parents,
+  .photo-parents,
+  .marriage,
+  .marriage-photos,
+  .childrens,
+  .image-childrens,
+  .movie-history,
+  .image-estrela-fama,
+  .inventions,
+  .recognition,
+  .image {
+    margin: 0 auto;
+    width: 800px;
   }
 
   .video-homenage {
-    max-width: 60%;
+    max-width: 800px;
   }
 
-  .image-patente {
+  .image-estrela-fama {
+    height: 300px;
+    max-width: 600px;
+  }
+
+  .carousel {
+    width: 400px;
+    height: 600px;
+  }
+
+  .image-patente,
+  .image-inventions {
     width: 600px;
     margin: 0 auto;
+  }
+
+  main .references {
+    height: 1500px;
   }
 }
