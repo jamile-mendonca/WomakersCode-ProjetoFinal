@@ -14,6 +14,7 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap"
   rel="stylesheet">
+<script src="./script.js" defer></script>
 
 <body>
   <header>
@@ -43,27 +44,39 @@
           https://hedylamarr.com/about/filmography/</p>
       </div>
     </section>
-    <section class="movie-images">
-      <div class="carousel">
-        <button class="arrow-left control"><img src="./assets/arrow-left.png" alt=""></button>
-        <button class="arrow-right control"><img src="./assets/arrow-right.png" alt=""></button>
-        <div class="carousel-images">
-          <img class="item current-item" src="./assets/movie1.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie2.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie3.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie4.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie5.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie6.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie7.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie8.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie9.jpg" alt="capas de filmes estrelados por Hedy">
-          <img class="item" src="./assets/movie10.jpg" alt="capas de filmes estrelados por Hedy">
 
-        </div>
+    <section class="carousel">
+      <div class="carousel-buttons">
+        <button data-js="carousel-button-prev" class="arrow-left"><img src="./assets/arrow-left.png"
+            alt="seta para esquerda"></button>
+        <button data-js="carousel-button-next" class="arrow-right"><img src="./assets/arrow-right.png"
+            alt="seta para direita"></button>
+      </div>
+      <div class="carousel-images">
+        <div data-js="carousel-item" class="carousel-item carousel-visible"><img src="./assets/movie1.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie2.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie3.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie4.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie5.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie6.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie7.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie8.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie9.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
+        <div data-js="carousel-item" class="carousel-item"><img src="./assets/movie10.jpg"
+            alt="capas de filmes estrelados por Hedy"></div>
     </section>
   </main>
   <footer>
-    <div class="madeBy">Feito com <img src="./assets/heart.svg">por Jamile Xavier Mendonça</div>
+    <div class="madeBy">Feito com <img class="heart" src="./assets/heart.svg"> por Jamile Xavier Mendonça</div>
     <div class="references">
       <a href="./referencias.html">Referências Bibliográficas</a>
     </div>

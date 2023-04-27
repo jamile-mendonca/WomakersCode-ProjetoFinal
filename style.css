@@ -24,11 +24,19 @@ nav .list {
   list-style: none;
   display: flex;
   margin-top: 20px;
-  color: #23389b;
 }
 
 nav .list>li {
   padding: 10px;
+}
+
+nav .list li a {
+  color: #d7008b;
+}
+
+nav .list li:hover {
+  background: #f3e8a0;
+  border-radius: 10px;
 }
 
 main {
@@ -76,17 +84,23 @@ main .introduction {
 .brief>h2 {
   text-align: center;
   color: #5e5c0a;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   font-size: 30px;
+}
+
+.brief>p {
+  margin: 0 auto 10px;
 }
 
 .video-homenage {
   margin: 0 auto;
+  height: 300px;
 }
 
 .video-homenage .video {
   margin-top: 15px;
   width: 100%;
+  height: 100%;
 }
 
 
@@ -100,6 +114,10 @@ footer {
   font-family: 'Bebas Neue', cursive;
 }
 
+.heart {
+  animation: pulsar 1s infinite alternate;
+}
+
 footer .madeBy,
 .references {
   margin: 0 auto;
@@ -111,7 +129,8 @@ footer .madeBy,
 }
 
 .madeBy img {
-  width: 20px;
+  width: 15px;
+  margin: 4px;
 }
 
 .references>a {
@@ -180,6 +199,10 @@ main p {
 
 /*Movies*/
 
+.movie-history>h1 {
+  color: #5e5c0a;
+}
+
 .image-estrela-fama {
   height: 300px;
   width: 250px;
@@ -199,54 +222,50 @@ main p {
 }
 
 
-.movie-images {
-  position: relative;
-  max-width: 640px;
-  margin: 140px auto 0;
-  padding: 15px;
-}
-
 .carousel {
-  overflow-x: auto;
+  margin: 140px auto 0;
+  overflow: hidden;
+  width: 250px;
+  position: relative;
 }
 
-.arrow-left,
-.arrow-right {
+.carousel .carousel-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: auto;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-buttons button {
   cursor: pointer;
   border: none;
-  background: linear-gradient(to left, transparent 0%, black 200%);
+  border-radius: 10px;
+  background: #f3d9a0;
+  opacity: 0.8;
 }
 
-.arrow-right {
-  left: auto;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, transparent 0%, black 200%);
+.carousel .carousel-item {
+  display: none;
 }
 
-.arrow-left:hover,
-.arrow-right:hover {
-  opacity: 1;
-}
-
-.carousel-images {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 15px;
-}
-
-.carousel-images img {
+.carousel .carousel-item img {
   width: 100%;
-  height: 100%;
-  border: 1px solid #c194a7;
+  height: auto;
+}
+
+.carousel .carousel-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
 }
 
 /*Inventions*/
+.inventions h1 {
+  color: #5e5c0a;
+}
+
 .image-patente,
 .image-inventions {
   height: 300px;
@@ -269,8 +288,31 @@ main p {
 }
 
 /*References*/
+main .references {
+  height: 800px;
+}
 
+/*Keyframes*/
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
 
 /*Medias*/
 
@@ -279,11 +321,39 @@ main p {
   .image img {
     height: 400px;
   }
+
+  .video-homenage {
+    height: 500px;
+  }
 }
 
 @media(min-width: 900px) {
-  main .text {
+
+  main .text,
+  .brief>p,
+  .parents,
+  .marriage,
+  .childrens,
+  .movie-history,
+  .image-estrela-fama>p,
+  .inventions,
+  .recognition {
     margin: 0 auto;
     width: 600px;
+  }
+
+  .image-estrela-fama>p {
+    display: flex;
+    left: -157px;
+    position: relative;
+  }
+
+  .video-homenage {
+    max-width: 60%;
+  }
+
+  .image-patente {
+    width: 600px;
+    margin: 0 auto;
   }
 }
